@@ -28,11 +28,12 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap > <C-w>>
 noremap < <C-w><
-"noremap m <C-w>+
-"noremap M <C-w>-
+noremap m <C-w>+
+noremap M <C-w>-
 noremap s 1g~<right>
 noremap S viwg~
 noremap W :w
+noremap <C-S> :%s/	/    /g<return>
 noremap <C-n> :next <return>
 noremap <C-p> :previous <return>
 noremap <C-N> :w <return>:next <return>
@@ -44,7 +45,7 @@ noremap <S-F5> :w<return>:!clear && make <return>
 noremap <F5> :w<return>:!clear && make -j <return>
 noremap <F6> :w<return>:!clear && make -j<return>:!./main <return>
 noremap <F7> :!./main<return>
-noremap <F8> :w<return>:!clear; pdflatex %; pdflatex %;clean-latex<return>
+noremap <F8> :w<return>:!clear; pdflatex -shell-escape %; pdflatex -shell-escape %;clean-latex<return>
 noremap <F9> :w<return>:!clear; octave-cli %<return>
 noremap <F10> :w<return>:!clear; python3 %<return>
 

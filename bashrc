@@ -128,12 +128,9 @@ alias m="mkdir -p"
 alias mdkir="mkdir"
 alias rem="rm -rI"
 alias q="exit"
-alias zathura="zathura --fork"
+#alias zathura="zathura --fork"
 
 set -o vi
 PATH=$PATH:/home/josh/bin
 
-export PICO_SDK_PATH=/home/josh/D2/pico/pico/pico-sdk
-export PICO_EXAMPLES_PATH=/home/josh/D2/pico/pico/pico-examples
-export PICO_EXTRAS_PATH=/home/josh/D2/pico/pico/pico-extras
-export PICO_PLAYGROUND_PATH=/home/josh/D2/pico/pico/pico-playground
+source /opt/ros/humble/setup.bash
